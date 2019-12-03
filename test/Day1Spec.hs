@@ -6,7 +6,7 @@ import Day1
 import Test.Hspec
 
 spec :: Spec
-spec = do
+spec =
   describe "Day1" $ do
     describe "part a" $ do
       it "For a mass of 12, divide by 3 and round down to get 4, then subtract 2 to get 2." $
@@ -27,7 +27,4 @@ spec = do
         fuelForB 100756 `shouldBe` 50346
       it "answer" $ do
         input <- readFileUtf8 "inputs/day1.txt"
-        totalFuel fuelForB input `shouldBe` 3265923
-    
-  describe "Day2" $
-    it "TBD" $ 1 `shouldBe` 1
+        totalFuel fuelForB input `shouldBe` 4896020
